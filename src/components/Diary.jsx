@@ -21,7 +21,7 @@ const Diary = () => {
     }
 
     const contentClik=()=>{
-      alert(detail.content);
+      alert("제목 : " + detail.subject + " 내용 : " + detail.content);
     }
     const onReset=(e)=>{
       setdetail({
@@ -34,7 +34,7 @@ const Diary = () => {
     <div className="diary">
       <input name="subject" placeholder="제목을 입력해주세요" onChange={handleValue} value={detail.subject}/>
       <br />
-      <textarea name="content" placeholder="내용을 입력해주세요" onChange={handleValue} />
+      <textarea name="content" placeholder="내용을 입력해주세요" onChange={handleValue} value={detail.content}/>
       <br />
       <button onClick={onReset}>초기화</button>
       <br />
