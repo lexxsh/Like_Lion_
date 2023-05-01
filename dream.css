@@ -17,8 +17,8 @@ body{
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    left: 25%;
-    top:60px;
+    left: 24%;
+    top:58px;
     font-size: 1.1em;
     list-style-type: none;
     font-family: "Schoolbell", cursive;
@@ -43,8 +43,9 @@ body{
     flex-direction: row;
     justify-content: center;
     position: relative;
+    width: 100px;
     top: -14px;
-    right: -20%;
+    right: -67%;
     font-size: 1.1em;
     list-style-type: none;
     font-family: "Schoolbell", cursive;

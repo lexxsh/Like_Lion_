@@ -37,9 +37,9 @@ body{
 }
 
 .progress{
-  position: relative;
-  right: -35%;
-  top: 8%;
+  position: sticky;
+  top: 45%;
+  left: 36%;
   height: 10px;
   width: 25%;
   border: 10px solid #ffee00;
@@ -130,12 +130,14 @@ body{
   justify-content: center;
   position: relative;
   z-index: 8;
+  width: 100px;
   top: -15px;
-  right: -20%;
+  right: -68%;
   font-size: 1.1em;
   list-style-type: none;
   color: rgb(255, 255, 255);
   font-family: "Schoolbell", cursive;
+  margin: 0;
 }
 .nav2 a{
   text-decoration: none;
@@ -150,6 +152,63 @@ body{
 
 .nav2 li {
   margin-right: 100px;
+}
+#modal.modal-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 11;
+  display: none;
+}
+#btn-modal{
+  position: relative;
+  z-index: 7;
+}
+#modal .modal-window {
+  background: #d0eaffb3;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 400px;
+  height: 500px;
+  position: sticky;
+  top: 40px;
+  padding: 10px;
+}
+#modal .title {
+  padding-left: 10px;
+  display: inline;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+  position: relative;
+  left: 10%;
+}
+#modal .title h2 {
+  display: inline;
+}
+#modal .close-area {
+  top:-90px;
+  position: relative;
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
 }
 
 .menu {
@@ -461,6 +520,15 @@ font-family: 'Righteous', cursive;
 	  border : 1px solid #ffffff;
     width: 50%;
     left:-30%;
+}
+.footer p{
+  position: relative;
+  z-index: 5;
+  color: rgb(0, 0, 0);
+  bottom: -200px;
+  left: -43%;
+  font-family: "Poor Story", cursive;
+  font-size: 20px;
 }   
 #contact p{
         position: relative;
@@ -471,10 +539,15 @@ font-family: 'Righteous', cursive;
         font-family: "Poor Story", cursive;
         font-size: 20px;
 }
+.footer{
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
 .footer ul {
   position: absolute;
   padding: 0;
-  right: 27%;
+  right: 40px;
   margin: 0;
   transform: translate(-50%, -50%);
   display: flex;
