@@ -28,3 +28,14 @@ window.addEventListener("keyup", e => {
         modalOff()
     }
 })
+const opacityImage = document.querySelector('.opacity-image');
+
+const callback = ([entry], observer) => {
+    entry.target.style.opacity = entry.intersectionRatio;
+}
+
+const observer = new IntersectionObserver(callback, {
+  threshold: [...new Array(101)].map((_, i) => i / 100)
+});
+
+observer.observe(opacityImage);

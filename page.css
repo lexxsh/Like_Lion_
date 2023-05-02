@@ -306,6 +306,17 @@ body{
   z-index: 5;
   border-radius: 5%;
   box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25);
+  animation: buttt 3s infinite alternate;
+  opacity: 0;
+}
+
+@keyframes buttt {
+  from {
+    top: -60%;
+  }
+  to {
+    top: -55%;
+  }
 }
 .speech_bubble {
   position: relative;
@@ -355,6 +366,7 @@ body{
   flex-direction: row;
   justify-content: center;
   width: 100vw;
+  
 }
 #cafe a{
   text-decoration: none;
