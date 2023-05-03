@@ -39,3 +39,19 @@ const observer = new IntersectionObserver(callback, {
 });
 
 observer.observe(opacityImage);
+const outer = document.querySelector('.outer');
+const innerList = document.querySelector('.inner-list');
+const inners = document.querySelectorAll('.inner');
+let currentIndex = 0;
+inners.forEach((inner) => {
+    inner.style.width = `${outer.clientWidth}px`;})
+    innerList.style.width = `${outer.clientWidth * inners.length}px`;
+    const getInterval = () => {
+        return setInterval(() => {
+          currentIndex++;
+          currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
+          innerList.style.marginLeft = `-${outer.clientWidth * currentIndex+18}px`;
+        }, 2000);
+      }
+      
+      let interval = getInterval();
