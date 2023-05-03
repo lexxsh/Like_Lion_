@@ -21,7 +21,7 @@ const Box = (props) => {
   return (
     <>
       <BoxEach boxColor={props.boxColor}>
-        <BoxText></BoxText>
+        <BoxText>{props.text}</BoxText>
       </BoxEach>
     </>
   );
