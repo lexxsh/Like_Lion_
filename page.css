@@ -625,7 +625,7 @@ font-family: 'Righteous', cursive;
 
 .inner-list {
   display: flex;
-  transition: 1s ease-out;
+  transition: 0.4s ease-out;
   height: 100%;
 }
 .inner-list img{
