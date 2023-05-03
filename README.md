@@ -66,9 +66,10 @@ const circleColorArr = ["pink","red","black","gray","green","blue","orange"];
 # 이상혁의 결과물 !!!!!!!!!!!!!!!!!!!! 
 
 ## 1-3 번
-[1-3번](https://user-images.githubusercontent.com/110239629/236005228-2aae7b42-acb5-4f95-979a-69fee7dbd6fd.png)
+<img alt="image" src="https://user-images.githubusercontent.com/110239629/236005228-2aae7b42-acb5-4f95-979a-69fee7dbd6fd.png">
 
 
 ## 4번 !
-[4번](https://user-images.githubusercontent.com/110239629/236005268-20fcc23d-3ddc-471f-a712-2d6fd952c039.png)
+<img alt="image" src="https://user-images.githubusercontent.com/110239629/236005268-20fcc23d-3ddc-471f-a712-2d6fd952c039.png">
+
 
