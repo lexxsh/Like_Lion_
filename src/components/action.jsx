@@ -11,7 +11,7 @@ const Bigbox = styled.div`
 `;
 
 const Action = styled.div`
-  position: absolute;
+  position: relative;
   top: -12%;
   left: -15%;
   width: 265px;
