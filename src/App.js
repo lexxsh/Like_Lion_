@@ -1,6 +1,20 @@
-// 해당 위치에 필요한 컴포넌트를 바탕으로 직접 Bootstrap Album 페이지를 개발하시면 됩니다.
-function App() {
-  return <>모두 화이팅!</>;
-}
+import React from "react";
+import { GlobalStyle } from "./components/Globle/Globle";
+import Head from "./components/Head/Head";
+import Footer from "./components/Footer/Footer";
+import Main from "./components/Main/Main"
+import Card from "./components/Card/Card"
 
+
+function App() {
+  return (
+    <div>
+    <GlobalStyle />
+    <Head></Head>
+    <Main></Main>
+    <Card></Card>
+    <Footer></Footer>
+    </div>
+  );
+}
 export default App;
