@@ -1,22 +1,19 @@
 
 import styled from 'styled-components';
+import {motion} from "framer-motion";
 
-const MenuBox = styled.div`
-    width: auto;
-    height: 0;
+const MenuBox = styled(motion.div)`
+    width: 100%;
+    height: 0px;
     display: flex;
     justify-content: space-around;
-    transition: height 0.5s ease;
-    &.open {
-    height: 11rem;
-    transition: height 0.5s ease;
-    }
 `;
 ;
 const About = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0px -200px;
+
 `;
 const AboutTop = styled.h1`
     font-size: 1.5rem;
@@ -46,10 +43,24 @@ const ContactText = styled.a`
         }
 `;
 
-const Menu = (showMenu) => {
+const animationHeader = {
+    open: {height: 0,
+        transition: {
+            duration: 1,
+            type: 'spring',
+    }},
+    
+    closed: {height: 170, 
+        transition: {
+            duration: 1,
+            type: 'spring',
+    }}
+}
+
+const Menu = ({showMenu}) => {
 
     return (
-            <MenuBox className={showMenu ? 'open' : ''}>
+            <MenuBox className={showMenu} initial='start' animate={showMenu === 'open' ? 'open' : 'closed'} variants={animationHeader}>
                 <About>
                     <AboutTop>About</AboutTop>
                     <AboutText>Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</AboutText>

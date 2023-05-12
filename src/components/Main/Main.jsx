@@ -69,6 +69,9 @@ const Mainbutton2 = styled.button`
         box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
     }
 `;
+const ScrollToTop = () => { 
+  window.scrollTo(0,0);
+};
 const Main = () => {
   return (
     <div>
@@ -80,8 +83,8 @@ const Main = () => {
           so folks don’t simply skip over it entirely.
         </Mainbottomtext>
         <Button>
-          <Mainbutton1 onClick={App}>Main call to action</Mainbutton1>
-          <Mainbutton2 onClick={App}>Secondary action</Mainbutton2>
+          <Mainbutton1 onClick={ScrollToTop}>Main call to action</Mainbutton1>
+          <Mainbutton2 onClick={ScrollToTop}>Secondary action</Mainbutton2>
         </Button>
       </Mainbox>
     </div>

@@ -4,7 +4,7 @@ import { FiCamera } from "react-icons/fi";
 import {BsList} from "react-icons/bs";
 import Menu from "./Menu";
 import { useState} from "react";
-
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 const Headbox = styled.div`
     background-color: ${(props) => (props.boxColor ? props.boxColor : "#343A40")};
     width: auto;
@@ -26,6 +26,10 @@ const HeadText = styled.strong`
         left: -0.5rem;
         top:0.05rem;
     }
+    .text-link{
+        text-decoration: none;
+        color: white;
+    }
     `;
 const Headbutton = styled.button`
     width: 3.5rem;
@@ -42,7 +46,9 @@ const Headbutton = styled.button`
         cursor: pointer;
     }
     `;
-    
+    const Backtop = () => { 
+        window.scrollTo(0,0);
+    };
 
     const Head=()=>{
         const [showMenu, setshowMenu] = useState(false);
@@ -50,15 +56,16 @@ const Headbutton = styled.button`
             setshowMenu((prev)=>!prev);
         };
     return(
-
+        <Router>
         <Headbox>
             {showMenu &&(<Menu showMenu={showMenu}/>)}
             <HeadALL>
-            <HeadText><FiCamera className="logo"/>Album</HeadText>
+            <HeadText><Link className="text-link" onClick={Backtop}><FiCamera className="logo"/>Album</Link></HeadText>
             <Headbutton onClick={toggleMenu}><BsList size="2rem"/></Headbutton>
             
             </HeadALL>
         </Headbox>
+        </Router>
         
     );
 };

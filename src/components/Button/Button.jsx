@@ -14,7 +14,7 @@ const CardButton1 = styled.button`
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     border: 1px solid #6c757d;
-    background-color: white;
+    background: none;
     color: #6c757d;
     &:hover{
         background-color:#6c757d ;
@@ -33,7 +33,7 @@ const CardButton1 = styled.button`
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     border: 1px solid #6c757d;
-    background-color: white;
+    background: none;
     color: #6c757d;
     &:hover{
         background-color:#6c757d ;
@@ -48,12 +48,15 @@ const CardButton1 = styled.button`
         box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
     }
     `;
+
 const Button = () => {
     return (
         <div>
+
             <CardB>
-                    <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
+                    <CardButton1 >View</CardButton1><CardButton2 >Edit</CardButton2>
             </CardB>
+
         </div>
     );
 };
