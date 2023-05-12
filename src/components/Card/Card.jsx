@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Button from "../Button/Button";
 const Cardbox = styled.div`
     background-color: #f8f9fa;
     width: auto;
@@ -41,30 +41,6 @@ const CardDown = styled.div`
     display: flex;
     justify-content: space-between;
 `;
-const CardB = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin: 0rem 1rem;
-    width:2.75rem;
-    height: 2rem;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: 400;
-`;
-const CardButton1 = styled.button`
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-    border: 1px solid #6c757d;
-    background-color: white;
-    color: #6c757d;
-    `;
-    const CardButton2 = styled.button`
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
-    border: 1px solid #6c757d;
-    background-color: white;
-    color: #6c757d;
-    `;
 const CardTime = styled.p`
     font-size: 0.8rem;
     margin: 0.5rem 1rem;
@@ -78,9 +54,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                     
@@ -91,9 +65,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>
@@ -103,9 +75,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>
@@ -115,9 +85,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>
@@ -127,9 +95,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>
@@ -139,9 +105,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>
@@ -151,9 +115,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>
@@ -163,9 +125,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>
@@ -175,9 +135,7 @@ const Card = () => {
                 <Cardtext>
                     <CardMaintext>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardMaintext>
                     <CardDown>
-                        <CardB>
-                        <CardButton1>View</CardButton1><CardButton2>Edit</CardButton2>
-                        </CardB>
+                        <Button/>
                         <CardTime>9 mins</CardTime>
                     </CardDown>
                 </Cardtext>

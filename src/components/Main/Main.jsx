@@ -36,6 +36,17 @@ const Mainbutton1 = styled.button`
   border: 1px;
   font-size: 1rem;
   text-align: center;
+  &:hover{
+        transition: 0.1s ease-in;
+        filter: brightness(0.7);
+        cursor: pointer;
+    }
+    &:not(:hover) {
+        transition: 0.1s ease-out;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
 `;
 const Mainbutton2 = styled.button`
   background-color: #6c757d;
@@ -46,6 +57,17 @@ const Mainbutton2 = styled.button`
   border: 1px;
   font-size: 1rem;
   text-align: center;
+  &:hover{
+        transition: 0.1s ease-in;
+        filter: brightness(0.7);
+        cursor: pointer;
+    }
+    &:not(:hover) {
+        transition: 0.1s ease-out;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+    }
 `;
 const Main = () => {
   return (
