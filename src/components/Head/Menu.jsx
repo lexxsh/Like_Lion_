@@ -9,7 +9,7 @@ const MenuBox = styled(motion.div)`
     justify-content: space-around;
 `;
 ;
-const About = styled.div`
+const About = styled(motion.div)`
     display: flex;
     flex-direction: column;
     margin: 0px -200px;
@@ -26,7 +26,7 @@ const AboutText = styled.p`
     margin: -8px 0px;
     line-height: 25px;
 `;
-const Contact = styled.div`
+const Contact = styled(motion.div)`
     display: flex;
     flex-direction: column;
 `
@@ -55,17 +55,36 @@ const animationHeader = {
             duration: 1,
             type: 'spring',
     }}
-}
+
+};
+const textHeader = {
+    open: {overflow:"hidden"},
+    
+    closed: {overflow:"hidden"}
+
+};
 
 const Menu = ({showMenu}) => {
-
     return (
-            <MenuBox className={showMenu} initial='start' animate={showMenu === 'open' ? 'open' : 'closed'} variants={animationHeader}>
-                <About>
+            <MenuBox className={showMenu}
+                initial='start' 
+                animate={showMenu === 'open' ? 'open' : 'closed'} 
+                exit='open'
+                variants={animationHeader}
+                >
+                <About className={showMenu}
+                initial='start' 
+                animate={showMenu === 'open' ? 'open' : 'closed'} 
+                exit='open'
+                variants={textHeader}>
                     <AboutTop>About</AboutTop>
                     <AboutText>Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</AboutText>
                 </About>
-                <Contact>
+                <Contact className={showMenu}
+                initial='start' 
+                animate={showMenu === 'open' ? 'open' : 'closed'} 
+                exit='open'
+                variants={textHeader}>
                     <ContactTop>Contact
                     </ContactTop>
                     <ContactText>Follow on Twitter</ContactText>
@@ -73,8 +92,7 @@ const Menu = ({showMenu}) => {
                         <ContactText>Email me</ContactText>
                 </Contact>
             </MenuBox>
-        
-    );
-};
+            );
+    };
 
 export default Menu;

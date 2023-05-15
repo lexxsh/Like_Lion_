@@ -5,6 +5,7 @@ import {BsList} from "react-icons/bs";
 import Menu from "./Menu";
 import { useState} from "react";
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { AnimatePresence} from "framer-motion";
 const Headbox = styled.div`
     background-color: ${(props) => (props.boxColor ? props.boxColor : "#343A40")};
     width: auto;
@@ -58,7 +59,9 @@ const Headbutton = styled.button`
     return(
         <Router>
         <Headbox>
+        <AnimatePresence>
             {showMenu &&(<Menu showMenu={showMenu}/>)}
+            </AnimatePresence>
             <HeadALL>
             <HeadText><Link className="text-link" onClick={Backtop}><FiCamera className="logo"/>Album</Link></HeadText>
             <Headbutton onClick={toggleMenu}><BsList size="2rem"/></Headbutton>
