@@ -19,3 +19,15 @@ https://getbootstrap.com/docs/4.3/examples/album/
 1. 우측 상단 햄버거 버튼 클릭 시 진행되는 동적 기능
 2. 기타 애니메이션 효과
 3. 하단 Footer
+
+## 결과화면
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/ac1a4b5b-c7ae-4822-a0a7-33fb2f24aa24)
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/e0ddd20a-2dca-4190-bc0c-c60142bbbb5f)
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/822dc22d-8e4c-43b2-85b8-ded01eeb5a06)
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/19dfdada-2653-4d03-b2fb-c48b5002532f)
+
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/0416f788-4dd2-423c-b9eb-3828dfce8824)
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/4f8ccee3-5b2a-4531-a269-2c48dcca7e67)
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/976d7e72-75d5-4fe6-89ee-13a07e07148d)
+![image](https://github.com/lexxsh/fe-react-clone-coding/assets/110239629/4bb5574e-0a0b-42df-94bf-c941eb8d6937)
+
