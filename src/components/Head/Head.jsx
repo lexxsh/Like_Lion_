@@ -45,6 +45,9 @@ const Headbutton = styled.button`
   &:hover {
     cursor: pointer;
   }
+  &:focus{
+    border: 1px solid white;
+  }
 `;
 const Backtop = () => {
   window.scrollTo(0, 0);
