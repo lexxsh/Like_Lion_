@@ -162,3 +162,68 @@ import { motion } from "framer-motion";
 
 - 스타일 컴포넌트와 animation 작동을 위한 framer-motion을 import 하였음.
 
+### Globle.jsx
+
+---
+
+- body 
+margin과 padding을 0을 주어 페이지의 여백을 없앰.
+- font
+font-family를 사용하여 전체 페이지의 font를 설정해주었음.
+
+```
+import { createGlobalStyle } from "styled-components";
+export const GlobalStyle = createGlobalStyle`
+```
+
+### Footer.jsx
+
+---
+
+- Footerbox
+footer부분의 전체박스를 포함하는 div 내부 요소들의 위치를 flex로 정의해주었음.
+- FooterText
+footer의 text스타일을 지정해줌. 라우트의 Link를 사용해준 부분은 마우스 호버시 밑줄이 생기고 색이 어두워지도록 설정하였음.
+- Backtop
+클릭시 페이지의 맨 위쪽으로 이동되게 하는 함수.
+
+```jsx
+import styled from "styled-components";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+```
+
+### Card.jsx
+
+---
+
+- Cardbox
+Card 부분의 전체 배경 부분을 포함하는 div, 배경색과 크기, 내부 요소를 지정해줌.
+- Cardbody
+카드박스 하나를 포함하는 div. 박스의 그림자와 크기를 설정해줌.
+- Cardimg
+카드 박스에서의 img 부분. 배경 이미지를 url을 통한 props로 전달 해줌. 이미지를 중앙에 위치하도록 지정해줌.
+- Cardtext
+카드박스의 글자들을 포함하는 div
+- CardMaintext
+카드박스의 메인 text 폰트사이즈와 위치, 간격을 지정해줌.
+- CardDown
+카드박스의 아래쪽 (버튼, 시간) 을 포함하는 div
+- CardTime
+카드박스의 시간을 나타내는 p 스타일
+
+```jsx
+import styled from "styled-components";
+import Button from "../Button/Button";
+```
+
+### Button.jsx
+
+---
+
+- CardB
+카드 안의 버튼 두개를 포함하는 div. 내부요소의 위치, 글자위치, 폰트 사이즈와 크기를 지정해줌.
+- CardButton1
+첫번째 버튼. 테두리와 border를 적용해주었고 배경화면을 none으로 두어 마우스 클릭시 효과가 잘보이도록 해줌. css를 사용해 클론 페이지의 효과와 동일하게 나타나도록 설정함.
+- CardButton2
+첫번째 버튼과 동일. 테두리의 효과를 넣기위에 각자 선언해 주었음.
+
