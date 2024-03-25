@@ -1,7 +1,7 @@
 # Like_lion_pj
 
 ## 멋쟁이 사자처럼 11기 자기소개 만들기 페이지
-https://lexxsh.github.io/Like_lion_pj/mine.html
+https://lexxsh.github.io/Like_Lion_Assignment/page.html
 ### 노트북 + 전체화면으로 봐주세요!
 ### 중간 오류 많고 코드 보기 힘듭니다...
 
